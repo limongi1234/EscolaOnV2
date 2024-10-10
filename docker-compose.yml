@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: c12A34t75?
+      MYSQL_DATABASE: Escola_ON
+      MYSQL_USER: escola
+      MYSQL_PASSWORD: 12345678
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    ports:
+      - "3388:3306" # host:container - default port was changed not to conflict with local mysql server
