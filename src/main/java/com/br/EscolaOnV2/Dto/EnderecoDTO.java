@@ -6,7 +6,7 @@ import com.br.EscolaOnV2.Entity.Professor;
 import lombok.Data;
 
 @Data
-public class EndereçoDTO {
+public class EnderecoDTO {
 
     private String provincia, municipio, bairro, rua;
     private Professor professor;
